@@ -1,0 +1,37 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "vendor/index";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-image: url("background2.jpeg");
+  background-size: cover;
+  color: white;
+}
+
+a {
+  margin-left: 20px;
+}
+
+li {
+  padding: 3px 0;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.btn btn-success {
+  margin-top: 20px;
+}

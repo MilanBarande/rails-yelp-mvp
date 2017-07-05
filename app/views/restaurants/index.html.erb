@@ -1,0 +1,18 @@
+
+<div class="container">
+<h2 class="title">Welcome on yelp</h2>
+
+
+<% @restaurants.each do |restaurant| %>
+  <ul class="list-unstyled">
+  <li><strong><%= restaurant.name %></strong></li>
+  <li><strong><%= restaurant.category %></strong></li>
+  <li><button class="btn btn-info"><%= link_to "Details and reviews", restaurant %></button></li>
+  <li><button class="btn btn-warning"><%= link_to 'Edit', edit_restaurant_path(restaurant) %></button></li>
+  <li><button class="btn btn-danger"><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></button></li>
+  </ul>
+  <% end %>
+
+
+<button class="btn btn-success"><%= link_to "Add a new restaurant", new_restaurant_path %></button>
+</div>
